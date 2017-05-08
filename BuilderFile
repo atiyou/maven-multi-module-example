@@ -1,0 +1,30 @@
+
+1) - identify which modules has been changed since last release (from last created tag)
+
+2) - RELEASE
+	2.1 : modify pom of parent pom & selected modules with the release version (removing -SNAPSHOT)
+	2.2 : run mvn deploy on parent pom & selected modules
+	2.3 : creating a tag on top level of parent pom
+3) - prepare next development
+	2.3 : modify pom of parent pom & selected modules with the next snapshot version
+	2.4 : build (clean package) all the projects to make sure everything works
+
+4) - reports actions (OPTIONAL)
+		
+		
+mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT versions:commit
+
+Test cases : 
+core -> 1.0.7-SNAPSHOT
+app -> 1.0.3-SNAPSHOT
+	(core -> 1.0.7-SNAPSHOT)
+
+
+
+
+
+
+trash : 
+mvn build-helper:parse-version versions:set -DnewVersion=\\\${parsedVersion.majorVersion}.\\\${parsedVersion.minorVersion}.\\\${parsedVersion.nextIncrementalVersion} versions:commit
+
+
