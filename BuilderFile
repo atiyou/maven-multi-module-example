@@ -9,15 +9,19 @@
 	2.3 : modify pom of parent pom & selected modules with the next snapshot version
 	2.4 : build (clean package) all the projects to make sure everything works
 
-4) - reports actions (OPTIONAL)
+find . -name "pom.xml" -exec mvn versions:set -DnewVersion=1.0.3-SNAPSHOT -f {} \;
+
+docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home:z -t jenkins
+
+4) - reports actions (OPTIONAL)		
 		
-		
-mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT versions:commit
+mvn build-helper:parse-version versions:set -DnewVersion=\${parsedVersion.majorVersion}.\${parsedVersion.minorVersion}.\${parsedVersion.nextIncrementalVersion}-SNAPSHOT
+versions:commit
 
 Test cases : 
 core -> 1.0.7-SNAPSHOT
-app -> 1.0.3-SNAPSHOT
-	(core -> 1.0.7-SNAPSHOT)
+app -> 1.2.2-SNAPSHOT
+	(core -> 1.0.6-SNAPSHOT)
 
 
 

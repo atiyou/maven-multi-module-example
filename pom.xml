@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jamesward</groupId>
 	<artifactId>multi</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>multi</name>
 	<modules>
@@ -22,7 +22,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
-				<version>2.4-SNAPSHOT</version>
+				<version>2.4.beta-SNAPSHOT</version>
 			</plugin>
 			<plugin>
 				<artifactId>maven-scm-plugin</artifactId>
