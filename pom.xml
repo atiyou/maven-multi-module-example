@@ -3,12 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jamesward</groupId>
 	<artifactId>multi</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>multi</name>
 	<modules>
 		<module>core</module>
 		<module>app</module>
+		<module>3rd-party</module>
 	</modules>
 	
 	<scm>

@@ -9,9 +9,9 @@
         <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>core</artifactId>
-    <name>core</name>
-    <version>1.0.4-SNAPSHOT</version>
+    <artifactId>ibatis</artifactId>
+    <name>ibatis</name>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>

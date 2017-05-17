@@ -9,9 +9,9 @@
         <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>core</artifactId>
-    <name>core</name>
-    <version>1.0.4-SNAPSHOT</version>
+    <artifactId>string</artifactId>
+    <name>spring</name>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <dependencies>
